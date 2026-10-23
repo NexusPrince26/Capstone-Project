@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100%;
+    font-family: "Inter", sans-serif;
+}
+.container{
+    width: 100%;
+    display: flex;
+}
+.aside{
+    width: 25%;
+    background-color: hsl(218, 58%, 15%);
+}
+.studymate-logo{
+    width: 200px;
+}
+.upper-nav, .lower-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 20px;
+}
+.dashboard, .subject, .study-planner, .practice-questions, .progress, .resources, .profile, .settings, .logout{
+    display: flex;
+    align-items: center;
+}
+.dashboard{
+    background-color: hsl(217, 89%, 51%);
+    margin-right: 10px;
+    border-radius: 7px;
+}
+.upper-nav h4 > a, .lower-nav h4 > a{
+    padding-left: 10px;
+    text-decoration: none;
+    color: hsl(215, 25%, 80%);
+}
+.aside nav img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.lower-nav{
+    padding-top: 150px;
+}
+.right-side{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 75%;
+    min-height: 100%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    background-color: hsl(214, 100%, 97%);
+    border-radius: 7px;
+    gap: 10px;
+    padding-left: 10px;
+}
+.search img, .notification-bell, .user-profile img, .intro img, .quote img{
+    width: 50px;
+}
+.search input{
+    width: 900px;
+    height: 50px;
+    background-color: hsl(214, 100%, 97%);
+    border: none;
+    color: hsl(215, 20%, 65%);border-radius: 7px;
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user-profile h5{
+    color: hsl(224, 64%, 22%);
+}
+.user-profile h6{
+    color: hsl(215, 20%, 65%);
+}
+.intro{
+    padding-bottom: 20px;
+}
+.intro-greeting{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.intro h1, .my-subjects h2, .study-plan h2, .progress2 h2{
+    color: hsl(224, 64%, 22%);
+}
+.intro h5{
+    color: hsl(215, 20%, 65%);
+}
+.quote{
+    width: 100%;
+    background-color: hsl(214, 100%, 97%);
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+q{
+    color: hsl(221, 83%, 53%);
+}
+.subjects{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+.subjects img{
+    width: 90px;
+}
+.maths, .bio, .chem, .phy, .eng{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    padding-bottom: 20px;
+}
+.maths{
+    background-color: hsl(210, 100%, 96%);
+}
+.bio{
+    background-color: hsl(120, 70%, 95%);
+}
+.chem{
+    background-color: hsl(350, 100%, 96%);
+}
+.phy{
+    background-color: hsl(270, 80%, 96%);
+}
+.eng{
+    background-color: hsl(40, 100%, 95%);
+}
+.maths h4 > a, .bio h4 > a, .chem h4 > a, .phy h4 > a, .eng h4 > a, .bio1 > div > a, .chem1 > div > a, .maths1 > div > a, .full-plan > h4 > a, .overall-progress > h3, .overall-progress > h5{
+    text-decoration: none;
+    color: hsl(224, 64%, 22%);
+}
+.plan-progress{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+.progress2 img{
+    width: 80px;
+}
+.study-plan img{
+    width: 40px;
+}
+.study-plan, .progress2{
+    box-shadow:
+    0 2px 6px rgba(59, 130, 246, 0.08),
+    0 0 3px rgba(59, 130, 246, 0.08);
+    border-radius: 7px;
+    padding-bottom: 10px;
+}
+.study-plan h2, .full-plan h4, .progress2{
+    padding: 5px 10px;
+}
+.bio1 > div, .chem1 > div, .maths1 > div{
+    display: flex;
+    align-items: center;
+}
+.bio1, .chem1, .maths1{
+    margin: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+}
+.bio1 > div > a, .chem1 > div > a, .maths1 > div > a{
+    font-weight: bold;
+}
+.bio1 > div > a:hover, .chem1 > div > a:hover, .maths1 > div > a:hover{
+    color: hsl(170, 85%, 35%);
+}
+.bio1 > div > span, .chem1 > div > span, .maths1 > div > span, .bio1 > span, .chem1 > span, .maths1 > span{
+    color: hsl(215, 25%, 45%);
+}
+.full-plan{
+    display: flex;
+}
+.progress2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.overall-progress h3{
+    text-align: center;
+}

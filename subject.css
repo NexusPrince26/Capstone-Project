@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100%;
+    font-family: "Inter", sans-serif;
+}
+.container{
+    width: 100%;
+    display: flex;
+}
+.aside{
+    width: 25%;
+    background-color: hsl(218, 58%, 15%);
+}
+.studymate-logo{
+    width: 200px;
+}
+.upper-nav, .lower-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 20px;
+}
+.dashboard, .subject, .study-planner, .practice-questions, .progress, .resources, .profile, .settings, .logout{
+    display: flex;
+    align-items: center;
+}
+.subject{
+    background-color: hsl(217, 89%, 51%);
+    margin-right: 10px;
+    border-radius: 7px;
+}
+.upper-nav h4 > a, .lower-nav h4 > a{
+    padding-left: 10px;
+    text-decoration: none;
+    color: hsl(215, 25%, 80%);
+}
+.aside nav img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.lower-nav{
+    padding-top: 180px;
+}
+.right-side{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 75%;
+    min-height: 100%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    background-color: hsl(214, 100%, 97%);
+    border-radius: 10px;
+    gap: 10px;
+    padding-left: 10px;
+}
+.search img, .notification-bell, .user-profile img{
+    width: 50px;
+}
+.search input{
+    width: 900px;
+    height: 50px;
+    background-color: hsl(214, 100%, 97%);
+    border: none;
+    color: hsl(215, 20%, 65%);border-radius: 7px;
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.subjects h1, h4{
+    color: hsl(224, 64%, 22%);
+}
+.subjects h5{
+    color: hsl(215, 20%, 65%);
+}
+.grid-container{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.menu-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: hsl(215, 20%, 65%);
+}
+.menu-dot{
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    /* background-color: red; */
+    background-color: hsl(215, 20%, 65%);
+}
+.maths, .grid1, .bio, .grid2 , .chem , .grid3, .phy, .grid4, .eng, .grid5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+.grid1, .grid2, .grid3, .grid4, .grid5{
+    padding-bottom: 10px;
+}
+.grid1{
+    background-color: hsl(210, 100%, 96%);
+}
+.grid2{
+    background-color: hsl(120, 70%, 95%);
+}
+.grid3{
+    background-color: hsl(350, 100%, 96%);
+}
+.grid4{
+    background-color: hsl(270, 80%, 96%);
+}
+.grid5{
+    background-color: hsl(40, 100%, 95%);
+}
+.maths img, .chem img, .bio img, .phy img, .eng img{
+    width: 200px;
+}
+.maths:not(img), .bio:not(img), .chem:not(img), .phy:not(img), .eng:not(img){
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.maths, .bio, .chem, .phy, .eng{
+    padding-bottom: 15px;
+}
+.view-subject{
+    padding-top: 5px;
+    display: flex;
+}
+.view-subject img{
+    width: 30px;
+}
+.card-divider{
+    border: none;
+    border-top: 1px solid hsl(214, 30%, 88%);
+    width: 100%;
+}
+.view-subject > h4 > a{
+    text-decoration: none;
+}
