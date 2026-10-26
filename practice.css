@@ -98,7 +98,13 @@ header{
 .top-text h5{
     color: hsl(215, 25%, 45%);
 }
+.quiz-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .question-container{
+    margin-top: 20px;
     padding: 30px 50px;
     border-radius: 12px;
     box-shadow: 0px 4px 16px rgba(15, 23, 49, 0.09);
@@ -118,4 +124,91 @@ ol li::marker{
 }
 ul{
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ul li{
+    display: flex;
+    align-items: center;
+    color: hsl(215, 25%, 45%);
+    gap: 10px;
+}
+span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid hsl(215, 20%, 65%);
+    display: inline-block;
+}
+.selected .circle{
+    border-color: hsl(221, 83%, 53%);
+    background-color: hsl(221, 83%, 53%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inside{
+    width: 12px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+}
+ul li:hover{
+    cursor: pointer;
+}
+.bottom-sect{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 16px rgba(15, 23, 49, 0.09);
+}
+.button-sect{
+    display: flex;
+    justify-content: space-between;
+}
+.previous, .next{
+    border: none;
+    height: 40px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 7px;
+}
+.previous{
+    border: 2px solid hsl(221, 83%, 53%);
+    background-color: white;
+    width: 150px;
+}
+.next{
+    background-color: hsl(221, 83%, 53%);
+}
+.left-arrow, .previous > p{
+    color: hsl(221, 83%, 53%);
+}
+.right-arrow, .next > p{
+    color: hsl(0, 0%, 100%);
+}
+.progress{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.progress-fill, .progress-track{
+    border-radius: 100px;
+    height: 15px;
+}
+.progress-track{
+    width: 85%;
+    background-color: hsl(214, 100%, 97%);
+}
+.progress-fill{
+    width: 10%;
+    background-color: hsl(221, 83%, 53%);
 }
