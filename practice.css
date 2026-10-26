@@ -98,3 +98,24 @@ header{
 .top-text h5{
     color: hsl(215, 25%, 45%);
 }
+.question-container{
+    padding: 30px 50px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 16px rgba(15, 23, 49, 0.09);
+}
+.question-1{
+    padding-bottom: 20px;
+}
+.question-1 > ol > li > h3{
+    color: hsl(224, 64%, 22%);
+}
+ol li::marker{
+    color: hsl(224, 64%, 22%);
+    font-weight: bolder;
+}
+.options{
+    padding-left: 20px;
+}
+ul{
+    list-style: none;
+}
