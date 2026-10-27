@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100%;
+    font-family: "Inter", sans-serif;
+}
+.container{
+    width: 100%;
+    display: flex;
+}
+.aside{
+    width: 25%;
+    background-color: hsl(218, 58%, 15%);
+}
+.studymate-logo{
+    width: 200px;
+}
+.upper-nav, .lower-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 20px;
+}
+.dashboard, .subject, .study-planner, .practice-questions, .progress, .resources, .profile, .settings, .logout{
+    display: flex;
+    align-items: center;
+}
+.progress{
+    background-color: hsl(217, 89%, 51%);
+    margin-right: 10px;
+    border-radius: 7px;
+}
+.upper-nav h4 > a, .lower-nav h4 > a{
+    padding-left: 10px;
+    text-decoration: none;
+    color: hsl(215, 25%, 80%);
+}
+.aside nav img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.lower-nav{
+    padding-top: 150px;
+}
+.right-side{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 75%;
+    min-height: 100%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    background-color: hsl(214, 100%, 97%);
+    border-radius: 7px;
+    gap: 10px;
+    padding-left: 10px;
+}
+.search img, .notification-bell, .user-profile img{
+    width: 50px;
+}
+.search input{
+    width: 900px;
+    height: 50px;
+    background-color: hsl(214, 100%, 97%);
+    border: none;
+    color: hsl(215, 20%, 65%);border-radius: 7px;
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.top{
+    display: flex;
+    align-items: center;
+}
+.top img{
+    width: 100px;
+}
+.top-text h1{
+    color: hsl(224, 64%, 22%);
+}
+.top-text h5{
+    color: hsl(215, 25%, 45%);
+}
+.progress-2 > img{
+    width: 150px;
+}
+.maths img, .bio img, .chem img, .phy img, .eng img{
+    width: 50px;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.progress-check{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 70%;
+}
+.progress-2{
+    width: 20%;
+}
+.over-progress{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+}
+.over-progress h2{
+    color: hsl(224, 64%, 22%);
+    width: 100%;
+}
+.progress-fill1{
+    width: 85%;
+    background-color: hsl(160, 84%, 39%);
+}
+.text{
+    background-color: hsl(140, 60%, 96%);
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border-radius: 7px;
+}
+.top{
+    color: hsl(170, 85%, 25%);
+}
+.bottom{
+    color: hsl(221, 50%, 45%);
+}
+.tracks h2, h3, h4{
+    color: hsl(224, 64%, 22%);
+}
+h4{
+    font-weight: 400;
+}
+.tracks{
+    display: flex;
+    flex-direction: column;
+}
+.progress-tracks{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.maths, .bio, .chem, .phy, .eng{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 16px rgba(15, 23, 49, 0.09);
+    padding: 5px 10px;
+    width: 100%;
+}
+.maths1, .bio1, .chem1, .phy1, .eng1{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: 25%;
+}
+.progress-track1, .progress-track2, .progress-track3, .progress-track4, .progress-track5, .progress-track6{
+    width: 100%;
+    height: 15px;
+    border-radius: 100px;
+    background-color: hsl(214, 100%, 97%);
+    margin-right: 20px;
+}
+.progress-fill1, .progress-fill2, .progress-fill3, .progress-fill4, .progress-fill5, .progress-fill6{
+    height: 15px;
+    border-radius: 100px;
+}
+.progress-fill2{
+    background-color: hsl(217, 90%, 45%);
+    width: 70%;
+}
+.progress-fill3{
+    background-color: hsl(145, 80%, 35%);
+    width: 90%;
+}
+.progress-fill4{
+    background-color: hsl(354, 85%, 45%);
+    width: 60%;
+}
+.progress-fill5{
+    background-color: hsl(271, 76%, 42%);
+    width: 50%;
+}
+.progress-fill6{
+    background-color: hsl(29, 93%, 42%);
+    width: 40%;
+}
