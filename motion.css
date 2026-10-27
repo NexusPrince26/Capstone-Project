@@ -1,0 +1,175 @@
+.aside {
+    animation: slide-in-left 450ms ease-out both;
+}
+
+.right-side {
+    animation: fade-up 500ms ease-out both;
+}
+
+.image {
+    animation: slide-in-left 500ms ease-out both;
+}
+
+.text,
+.log-in {
+    animation: fade-up 500ms ease-out 100ms both;
+}
+
+.top {
+    animation: fade-up 450ms ease-out 100ms both;
+}
+
+.upper-nav > div,
+.lower-nav > div {
+    transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.upper-nav > div:hover,
+.lower-nav > div:hover {
+    transform: translateX(4px);
+}
+
+.upper-nav a,
+.lower-nav a,
+a {
+    transition: color 180ms ease;
+}
+
+.aside nav img {
+    transition: transform 180ms ease;
+}
+
+.upper-nav > div:hover img,
+.lower-nav > div:hover img {
+    transform: scale(1.08);
+}
+
+.grid-container > div,
+.subjects > div,
+.study-plan,
+.progress2,
+.question-container,
+.bottom-sect,
+.progress-tracks > div {
+    transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.grid-container > div:hover,
+.subjects > div:hover,
+.study-plan:hover,
+.progress2:hover,
+.question-container:hover,
+.bottom-sect:hover,
+.progress-tracks > div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(15, 23, 49, 0.12);
+}
+
+.grid-container > div img,
+.subjects > div img {
+    transition: transform 220ms ease;
+}
+
+.grid-container > div:hover img,
+.subjects > div:hover img {
+    transform: scale(1.04);
+}
+
+.search {
+    transition: box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.search:focus-within {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.password,
+.username {
+    transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.password:focus-within,
+.username:focus-within {
+    border-color: hsl(217, 89%, 51%);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+button {
+    transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(15, 23, 49, 0.14);
+}
+
+button:active {
+    transform: translateY(0) scale(0.98);
+}
+
+input:focus-visible,
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid hsl(217, 89%, 51%);
+    outline-offset: 3px;
+}
+
+tr {
+    transition: background-color 180ms ease;
+}
+
+tbody tr:hover {
+    background-color: hsl(214, 100%, 97%);
+}
+
+.progress-fill,
+.progress-fill1,
+.progress-fill2,
+.progress-fill3,
+.progress-fill4,
+.progress-fill5,
+.progress-fill6 {
+    animation: progress-fill 900ms ease-out 200ms both;
+}
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes progress-fill {
+    from {
+        width: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-delay: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}

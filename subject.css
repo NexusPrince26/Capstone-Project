@@ -109,7 +109,6 @@ header{
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    /* background-color: red; */
     background-color: hsl(215, 20%, 65%);
 }
 .maths, .grid1, .bio, .grid2 , .chem , .grid3, .phy, .grid4, .eng, .grid5{
