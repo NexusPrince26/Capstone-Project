@@ -132,6 +132,45 @@ tbody tr:hover {
     animation: progress-fill 900ms ease-out 200ms both;
 }
 
+.avatar-profile .avatar-text {
+    animation: fade-up 450ms ease-out 80ms both;
+    transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.avatar-profile .avatar-text:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+}
+
+.avatar-profile .avatar-img img {
+    transition: transform 220ms ease;
+}
+
+.avatar-profile .avatar-img img:hover {
+    transform: scale(1.05);
+}
+
+.right-side > .subject-sect {
+    animation: fade-up 450ms ease-out 150ms both;
+}
+
+.right-side > .Settings {
+    animation: fade-up 450ms ease-out 220ms both;
+}
+
+.right-side > .Settings .Account,
+.right-side > .Settings .Notification,
+.right-side > .Settings .Help {
+    transition: transform 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.right-side > .Settings .Account:hover,
+.right-side > .Settings .Notification:hover,
+.right-side > .Settings .Help:hover {
+    background-color: hsl(214, 100%, 98%);
+    transform: translateX(4px);
+}
+
 @keyframes fade-up {
     from {
         opacity: 0;
