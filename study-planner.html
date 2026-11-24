@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./Images/StudyMate Education Icon.png">
     <link rel="stylesheet" href="./study-planner.css">
-    <link rel="stylesheet" href="./motion.css">
-    <title>StudyMate</title>
+    <title>StudyMate | Study Planner</title>
 </head>
 <body>
     <div class="container">
@@ -45,23 +44,26 @@
             <nav class="lower-nav">
                 <div class="settings">
                     <img src="./Images/Minimalist White Gear App Icon Transparent Rounded No Background.png" alt="A Settings Icon">
-                    <h4><a href="">Settings</a></h4>
+                    <h4><a href="./profile.html#settings">Settings</a></h4>
                 </div>
                 <div class="logout">
                     <img src="./Images/Modern Navy Logout Icon Transparent Rounded No Background.png" alt="A Logout Icon">
-                    <h4><a href="">Log Out</a></h4>
+                    <h4><a href="./login.html">Log Out</a></h4>
                 </div>
             </nav>
         </div>
-        <div class="right-side">
+        <main class="right-side">
             <header>
-                <div class="search">
+                <form class="search" action="./search.html" method="get" role="search">
                     <img src="./Images/image_9cc13f8a.jpg" alt="A Search Icon">
-                    <input  placeholder="Search anything...">
-                </div>
+                    <input type="search" name="q" aria-label="Search StudyMate" placeholder="Search anything...">
+                </form>
                 <img src="./Images/Minimal Navy Notification Bell Icon Transparent Rounded.png" alt="A Notification Bell Icon" class="notification-bell">
                 <div class="user-profile">
                     <img src="./Images/Minimalist Flat Avatar Icon Transparent Rounded.png" alt="An Avatar Icon">
+                </div>
+                <div class="studymate">
+                    <h1>StudyMate</h1>
                 </div>
             </header>
             <div class="top">
@@ -71,13 +73,17 @@
                     <h5>Plan your study sessions and stay on track</h5>
                 </div>
             </div>
+            <div class="table-wrapper">
             <table>
+                <thead>
                 <tr>
                     <th>Day</th>
                     <th>Subject</th>
                     <th>Topic</th>
                     <th>Time</th>
                 </tr>
+                </thead>
+                <tbody>
                 <tr>
                     <td>Monday</td>
                     <td class="subject">
@@ -97,7 +103,7 @@
                         </span>
                         <span>Chemistry</span>
                     </td>
-                    <td>Acid & Bases</td>
+                    <td>Acids & Bases</td>
                     <td>5:00 PM</td>
                 </tr>
                 <tr>
@@ -120,7 +126,7 @@
                         <span>Physics</span>
                     </td>
                     <td>Motion</td>
-                    <td>5:00PM</td>
+                    <td>5:00 PM</td>
                 </tr>
                 <tr>
                     <td>Friday</td>
@@ -155,12 +161,14 @@
                     <td>-</td>
                     <td>-</td>
                 </tr>
+                </tbody>
             </table>
-            <button>
+            </div>
+            <a class="add-to-plan" href="./plan-added.html">
                 <img src="./Images/Glossy White Calendar Icon.png" alt="A Calendar Icon">
                 <b>Add To My Plan</b>
-            </button>
-        </div>
+            </a>
+        </main>
     </div>
 </body>
 </html>

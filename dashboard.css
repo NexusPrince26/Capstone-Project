@@ -1,67 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     width: 100%;
-    min-height: 100%;
     font-family: "Inter", sans-serif;
 }
+
 .container{
     width: 100%;
     display: flex;
 }
+
 .aside{
     width: 25%;
     background-color: hsl(218, 58%, 15%);
-    height: 585px;
+    min-height: 100vh;
+    height: auto;
 }
+
 .studymate-logo{
-    width: 200px;
+    width: 100%;
 }
+
+.studymate{
+    display: none;
+}
+
 .upper-nav, .lower-nav{
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding-left: 20px;
 }
+
 .dashboard, .subject, .study-planner, .practice-questions, .progress, .resources, .profile, .settings, .logout{
     display: flex;
     align-items: center;
 }
+
 .dashboard{
     background-color: hsl(217, 89%, 51%);
     margin-right: 10px;
     border-radius: 7px;
 }
+
 .upper-nav h4 > a, .lower-nav h4 > a{
     padding-left: 10px;
     text-decoration: none;
     color: hsl(215, 25%, 80%);
 }
+
 .aside nav img{
     width: 30px;
     height: 30px;
     object-fit: cover;
 }
+
 .lower-nav{
     padding-top: 120px;
 }
+
 .right-side{
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
     width: 75%;
-    min-height: 100%;
 }
+
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 20px;
 }
+
 .search{
     display: flex;
     align-items: center;
@@ -71,41 +88,51 @@ header{
     gap: 10px;
     padding-left: 10px;
 }
+
 .search img, .notification-bell, .user-profile img, .intro img, .quote img{
     width: 50px;
 }
+
 .search input{
-    width: 900px;
     height: 50px;
     background-color: hsl(214, 100%, 97%);
     border: none;
-    color: hsl(215, 20%, 65%);border-radius: 7px;
+    color: hsl(215, 20%, 65%);
+    border-radius: 7px;
 }
+
 .user-profile{
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .user-profile h5{
     color: hsl(224, 64%, 22%);
 }
+
 .user-profile h6{
     color: hsl(215, 20%, 65%);
 }
+
 .intro{
     padding-bottom: 20px;
 }
+
 .intro-greeting{
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .intro h1, .my-subjects h2, .study-plan h2, .progress2 h2{
     color: hsl(224, 64%, 22%);
 }
+
 .intro h5{
     color: hsl(215, 20%, 65%);
 }
+
 .quote{
     width: 100%;
     background-color: hsl(214, 100%, 97%);
@@ -116,9 +143,11 @@ header{
     border-radius: 7px;
     margin-bottom: 20px;
 }
+
 q{
     color: hsl(221, 83%, 53%);
 }
+
 .subjects{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -126,9 +155,11 @@ q{
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
+
 .subjects img{
     width: 90px;
 }
+
 .maths, .bio, .chem, .phy, .eng{
     display: flex;
     flex-direction: column;
@@ -137,50 +168,61 @@ q{
     border-radius: 7px;
     padding-bottom: 20px;
 }
+
 .maths{
     background-color: hsl(210, 100%, 96%);
 }
+
 .bio{
     background-color: hsl(120, 70%, 95%);
 }
+
 .chem{
     background-color: hsl(350, 100%, 96%);
 }
+
 .phy{
     background-color: hsl(270, 80%, 96%);
 }
+
 .eng{
     background-color: hsl(40, 100%, 95%);
 }
+
 .maths h4 > a, .bio h4 > a, .chem h4 > a, .phy h4 > a, .eng h4 > a, .bio1 > div > a, .chem1 > div > a, .maths1 > div > a, .full-plan > h4 > a, .overall-progress > h3, .overall-progress > h5{
     text-decoration: none;
     color: hsl(224, 64%, 22%);
 }
+
 .plan-progress{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
 }
+
 .progress2 img{
     width: 80px;
 }
+
 .study-plan img{
     width: 40px;
 }
+
 .study-plan, .progress2{
-    box-shadow:
-    0 2px 6px rgba(59, 130, 246, 0.08),
-    0 0 3px rgba(59, 130, 246, 0.08);
+    box-shadow: 0 0 3px rgba(59, 130, 246, 0.08);
     border-radius: 7px;
     padding-bottom: 10px;
 }
+
 .study-plan h2, .full-plan h4, .progress2{
     padding: 5px 10px;
 }
+
 .bio1 > div, .chem1 > div, .maths1 > div{
     display: flex;
     align-items: center;
 }
+
 .bio1, .chem1, .maths1{
     margin: 5px 20px;
     display: flex;
@@ -188,24 +230,327 @@ q{
     justify-content: space-between;
     border-bottom: 1px solid;
 }
+
 .bio1 > div > a, .chem1 > div > a, .maths1 > div > a{
     font-weight: bold;
 }
+
 .bio1 > div > a:hover, .chem1 > div > a:hover, .maths1 > div > a:hover{
     color: hsl(170, 85%, 35%);
 }
+
 .bio1 > div > span, .chem1 > div > span, .maths1 > div > span, .bio1 > span, .chem1 > span, .maths1 > span{
     color: hsl(215, 25%, 45%);
 }
+
 .full-plan{
     display: flex;
 }
+
 .progress2{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .overall-progress h3{
     text-align: center;
+}
+
+.studymate-logo {
+    max-width: 100%;
+}
+
+.upper-nav, .lower-nav {
+    padding-right: 10px;
+}
+
+.lower-nav {
+    margin-top: auto;
+    padding-top: 24px;
+}
+
+.right-side {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+}
+
+.search {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+}
+
+.search input {
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+    border: none;
+    outline: none;
+}
+
+.search:focus-within {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.grid-container > div:hover, .subjects > div:hover, .study-plan:hover, .progress2:hover, .question-container:hover, .bottom-sect:hover, .progress-tracks > div:hover {
+    box-shadow: 0 8px 20px rgba(15, 23, 49, 0.12);
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    body {
+        min-height: 100vh;
+        background: hsl(210, 40%, 98%);
+    }
+
+    .container {
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .aside {
+        display: contents;
+    }
+
+    .studymate-logo {
+        display: none;
+    }
+
+    .upper-nav {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 0;
+        background: hsl(0, 0%, 100%);
+        box-shadow: 0 -4px 16px rgba(15, 23, 49, 0.08);
+    }
+
+    .upper-nav > div {
+        display: none;
+        min-width: 0;
+        margin: 0;
+        padding: 4px 0;
+        border-radius: 8px;
+        background: transparent;
+        transform: none;
+    }
+
+    .upper-nav > .dashboard,
+    .upper-nav > .subject,
+    .upper-nav > .study-planner,
+    .upper-nav > .resources,
+    .upper-nav > .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .upper-nav h4 {
+        max-width: 100%;
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .upper-nav h4 > a {
+        display: block;
+        overflow: hidden;
+        max-width: 100%;
+        padding: 4px 1px 0;
+        color: hsl(215, 20%, 55%);
+    }
+
+    .upper-nav > .dashboard h4 > a,
+    .upper-nav > .subject h4 > a,
+    .upper-nav > .study-planner h4 > a,
+    .upper-nav > .resources h4 > a,
+    .upper-nav > .profile h4 > a {
+        font-size: 0;
+    }
+
+    .upper-nav > .dashboard h4 > a::after,
+    .upper-nav > .subject h4 > a::after,
+    .upper-nav > .study-planner h4 > a::after,
+    .upper-nav > .resources h4 > a::after,
+    .upper-nav > .profile h4 > a::after {
+        font-size: 9px;
+    }
+
+    .upper-nav > .dashboard h4 > a::after {
+        content: "Dashboard";
+    }
+
+    .upper-nav > .subject h4 > a::after {
+        content: "Subjects";
+    }
+
+    .upper-nav > .study-planner h4 > a::after {
+        content: "Planner";
+    }
+
+    .upper-nav > .resources h4 > a::after {
+        content: "Notes";
+    }
+
+    .upper-nav > .profile h4 > a::after {
+        content: "More";
+    }
+
+    .lower-nav {
+        display: none;
+    }
+
+    .right-side {
+        width: 100%;
+        padding: 0 16px 100px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        min-height: 64px;
+        margin: 0 -16px 18px;
+        padding: 12px 16px;
+        background: hsl(218, 58%, 15%);
+    }
+
+    .studymate {
+        display: block;
+        color: hsl(0, 0%, 100%);
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    header::before {
+        flex: none;
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        background: hsl(0, 0%, 100%) url("./Images/StudyMate Education Icon.png") center / contain no-repeat;
+        content: "";
+    }
+
+    header::after {
+        color: hsl(0, 0%, 100%);
+        content: attr(data-mobile-title);
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    header .search,
+    header > .notification-bell,
+    header > .user-profile {
+        display: none;
+    }
+
+    .top {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .right-side > .intro {
+        margin-top: 0;
+    }
+
+    .intro {
+        padding: 4px 0 16px;
+    }
+
+    .intro h1, .my-subjects h2,.study-plan h2, .progress2 h2, .subjects h1 {
+        font-size: 18px;
+    }
+
+    .my-subjects > h2 {
+        margin-bottom: 8px;
+    }
+
+    .quote {
+        min-height: 48px;
+        height: auto;
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .subjects {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 0 0 14px;
+    }
+
+    .subjects img {
+        width: 70px;
+    }
+
+    .subjects > div {
+        min-height: 88px;
+        padding: 8px 4px;
+        background-color: hsl(0, 0%, 100%);
+        box-shadow: 0 2px 8px rgba(15, 23, 49, 0.04);
+        text-align: center;
+    }
+
+    .subjects > div h4 {
+        font-size: 14px;
+    }
+
+    .study-plan, .progress2 {
+        border-radius: 12px;
+        background: hsl(0, 0%, 100%);
+        box-shadow: 0 3px 12px rgba(15, 23, 49, 0.05);
+    }
+
+    .bio1, .chem1, .maths1 {
+        gap: 8px;
+        margin: 8px 10px;
+        font-size: 15px;
+    }
+
+    .full-plan {
+        align-items: center;
+    }
+
+    .full-plan img {
+        width: 24px;
+    }
+
+    .plan-progress {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@keyframes page-enter {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
 }

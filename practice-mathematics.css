@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+}
+
+.aside{
+    width: 25%;
+    background-color: hsl(218, 58%, 15%);
+    min-height: 100vh;
+    height: auto;
+}
+
+.studymate-logo {
+    max-width: 100%;
+}
+
+.upper-nav,
+.lower-nav {
+    padding-right: 10px;
+}
+
+.lower-nav {
+    margin-top: auto;
+    padding-top: 24px;
+}
+
+.right-side {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+}
+
+.search {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+}
+
+.search input {
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+}
+
+.search:focus-within {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.studymate{
+    display: none;
+}
+
+.upper-nav, .lower-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 20px;
+}
+
+.dashboard, .subject, .study-planner, .practice-questions, .progress, .resources, .profile, .settings, .logout{
+    display: flex;
+    align-items: center;
+}
+
+.practice-questions{
+    background-color: hsl(217, 89%, 51%);
+    margin-right: 10px;
+    border-radius: 7px;
+}
+
+.upper-nav h4 > a, .lower-nav h4 > a{
+    padding-left: 10px;
+    text-decoration: none;
+    color: hsl(215, 25%, 80%);
+}
+
+.aside nav img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.right-side{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 75%;
+    min-height: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    background-color: hsl(214, 100%, 97%);
+    border-radius: 7px;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.search img, .notification-bell, .user-profile img{
+    width: 50px;
+}
+
+.search input{
+    width: 100%;
+    height: 50px;
+    background-color: hsl(214, 100%, 97%);
+    border: none;
+    color: hsl(215, 20%, 65%);
+    outline: none;
+    border-radius: 7px;
+}
+
+.user-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+}
+
+.top img{
+    width: 100px;
+}
+
+.top-text h1{
+    color: hsl(224, 64%, 22%);
+}
+
+.top-text h5{
+    color: hsl(215, 25%, 45%);
+}
+
+.quiz-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.question-container{
+    margin-top: 20px;
+    padding: 30px 50px;
+    border: 0;
+    min-width: 0;
+    border-radius: 12px;
+    box-shadow: 0px 4px 16px rgba(15, 23, 49, 0.09);
+}
+
+.question-1{
+    padding-bottom: 20px;
+}
+
+.question-1 > ol > li > h3{
+    color: hsl(224, 64%, 22%);
+}
+
+ol li::marker{
+    color: hsl(224, 64%, 22%);
+    font-weight: bolder;
+}
+
+.options{
+    border: 0;
+    padding-left: 20px;
+}
+
+.options legend{
+    margin-bottom: 12px;
+    color: hsl(215, 25%, 45%);
+}
+
+.options ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.options ul li{
+    display: flex;
+    align-items: center;
+    color: hsl(215, 25%, 45%);
+    gap: 10px;
+}
+
+.options input[type="radio"]{
+    flex: none;
+    width: 18px;
+    height: 18px;
+    accent-color: hsl(221, 83%, 53%);
+}
+
+.options label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.bottom-sect{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 16px rgba(15, 23, 49, 0.09);
+}
+
+.button-sect{
+    display: flex;
+    justify-content: space-between;
+}
+
+.previous, .next{
+    border: none;
+    height: 40px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 7px;
+}
+
+.previous{
+    border: 2px solid hsl(221, 83%, 53%);
+    background-color: white;
+    width: 150px;
+    text-decoration: none;
+}
+
+.next{
+    background-color: hsl(221, 83%, 53%);
+}
+
+.left-arrow, .previous > p{
+    color: hsl(221, 83%, 53%);
+}
+
+.right-arrow, .next > p{
+    color: hsl(0, 0%, 100%);
+}
+
+.next > span{
+    color: hsl(0, 0%, 100%);
+}
+
+.bottom-sect .progress{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.progress-fill, .progress-track{
+    border-radius: 100px;
+    height: 15px;
+}
+
+.progress-track{
+    width: 85%;
+    background-color: hsl(214, 100%, 97%);
+}
+
+.progress-fill{
+    width: 100%;
+    background-color: hsl(221, 83%, 53%);
+}
+
+
+
+.studymate-logo {
+    max-width: 100%;
+}
+
+.upper-nav,
+.lower-nav {
+    padding-right: 10px;
+}
+
+.lower-nav {
+    margin-top: auto;
+    padding-top: 24px;
+}
+
+.right-side {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+}
+
+.search {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+}
+
+.search input {
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+}
+
+.search:focus-within {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.grid-container > div:hover,
+.subjects > div:hover,
+.study-plan:hover,
+.progress2:hover,
+.question-container:hover,
+.bottom-sect:hover,
+.progress-tracks > div:hover {
+    box-shadow: 0 8px 20px rgba(15, 23, 49, 0.12);
+}
+
+button:hover {
+    box-shadow: 0 4px 10px rgba(15, 23, 49, 0.14);
+}
+
+@media (max-width: 700px) {
+    .right-side > header + .top {
+        margin-top: 0;
+    }
+
+    .top-text h1 {
+        font-size: 18px;
+    }
+
+    .question-container,
+    .bottom-sect {
+        border: 1px solid hsl(214, 30%, 92%);
+        border-radius: 12px;
+        background: hsl(0, 0%, 100%);
+        box-shadow: 0 3px 12px rgba(15, 23, 49, 0.05);
+    }
+
+    .question-container {
+        margin-top: 0;
+        padding: 16px;
+    }
+
+    .question-1 h3 {
+        font-size: 15px;
+    }
+
+    .options {
+        padding-left: 0;
+    }
+
+    .options ul {
+        gap: 10px;
+    }
+
+    .options ul li {
+        padding: 10px;
+        border: 1px solid hsl(214, 30%, 92%);
+        border-radius: 8px;
+        background: hsl(0, 0%, 100%);
+    }
+
+    .options input:checked {
+        outline: 2px solid hsl(217, 89%, 51%);
+        outline-offset: 3px;
+    }
+
+    .button-sect {
+        gap: 8px;
+    }
+
+    .previous,
+    .next {
+        width: auto;
+        min-width: 0;
+        padding: 8px 10px;
+    }
+
+    .bottom-sect .progress {
+        align-items: center;
+    }
+
+    .bottom-sect .progress-track {
+        flex: 1;
+        width: auto;
+    }
+
+    body {
+        min-height: 100vh;
+        background: hsl(210, 40%, 98%);
+    }
+
+    .container {
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .aside {
+        display: contents;
+    }
+
+    .studymate-logo {
+        display: none;
+    }
+
+    .upper-nav {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 0;
+        background: hsl(0, 0%, 100%);
+        box-shadow: 0 -4px 16px rgba(15, 23, 49, 0.08);
+    }
+
+    .upper-nav > div {
+        display: none;
+        min-width: 0;
+        margin: 0;
+        padding: 4px 0;
+        border-radius: 8px;
+        background: transparent;
+        transform: none;
+    }
+
+    .upper-nav > .dashboard,
+    .upper-nav > .subject,
+    .upper-nav > .study-planner,
+    .upper-nav > .resources,
+    .upper-nav > .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aside nav img {
+        flex: none;
+        width: 22px;
+        height: 22px;
+        object-fit: contain;
+    }
+
+    .upper-nav h4 {
+        max-width: 100%;
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .upper-nav h4 > a {
+        display: block;
+        overflow: hidden;
+        max-width: 100%;
+        padding: 4px 1px 0;
+        color: hsl(215, 20%, 55%);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .upper-nav > .dashboard h4 > a,
+    .upper-nav > .subject h4 > a,
+    .upper-nav > .study-planner h4 > a,
+    .upper-nav > .resources h4 > a,
+    .upper-nav > .profile h4 > a {
+        font-size: 0;
+    }
+
+    .upper-nav > .dashboard h4 > a::after,
+    .upper-nav > .subject h4 > a::after,
+    .upper-nav > .study-planner h4 > a::after,
+    .upper-nav > .resources h4 > a::after,
+    .upper-nav > .profile h4 > a::after {
+        font-size: 9px;
+    }
+
+    .upper-nav > .dashboard h4 > a::after {
+        content: "Home";
+    }
+
+    .upper-nav > .subject h4 > a::after {
+        content: "Subjects";
+    }
+
+    .upper-nav > .study-planner h4 > a::after {
+        content: "Planner";
+    }
+
+    .upper-nav > .resources h4 > a::after {
+        content: "Notes";
+    }
+
+    .upper-nav > .profile h4 > a::after {
+        content: "More";
+    }
+
+    .upper-nav a[aria-current="page"] {
+        color: hsl(217, 89%, 51%);
+        font-weight: 700;
+    }
+
+    .lower-nav {
+        display: none;
+    }
+
+    .right-side {
+        width: 100%;
+        padding: 0 16px 100px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-height: 64px;
+        margin: 0 -16px 18px;
+        padding: 12px 16px;
+        background: hsl(218, 58%, 15%);
+    }
+
+    .studymate {
+        display: block;
+        color: hsl(0, 0%, 100%);
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    header::before {
+        flex: none;
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        background: hsl(0, 0%, 100%) url("./Images/StudyMate Education Icon.png") center / contain no-repeat;
+        content: "";
+    }
+
+    header::after {
+        color: hsl(0, 0%, 100%);
+        content: attr(data-mobile-title);
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    header .search,
+    header > .notification-bell,
+    header > .user-profile {
+        display: none;
+    }
+
+    .top {
+        display: none;
+    }
+
+    button:hover,
+    .grid-container > div:hover,
+    .subjects > div:hover,
+    .study-plan:hover,
+    .progress2:hover,
+    .question-container:hover,
+    .bottom-sect:hover,
+    .progress-tracks > div:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .right-side > header > .user-profile,
+    .right-side > header > .notification-bell {
+        display: none;
+    }
+
+}
+
+@keyframes page-enter {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: page-enter 420ms ease-out both;
+}
+
+a,
+button {
+    transition: color 180ms ease, background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+a:hover,
+button:hover {
+    transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .upper-nav > div:hover,
+    .lower-nav > div:hover {
+        transform: none;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+    }
+
+}

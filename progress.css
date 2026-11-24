@@ -4,51 +4,67 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     width: 100%;
     min-height: 100%;
     font-family: "Inter", sans-serif;
 }
+
 .container{
     width: 100%;
     display: flex;
 }
+
 .aside{
     width: 25%;
     background-color: hsl(218, 58%, 15%);
-    height: 585px;
+    min-height: 100vh;
+    height: auto;
 }
+
 .studymate-logo{
     width: 200px;
 }
+
+.studymate{
+    display: none;
+}
+
 .upper-nav, .lower-nav{
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding-left: 20px;
 }
+
 .dashboard, .subject, .study-planner, .practice-questions, .progress, .resources, .profile, .settings, .logout{
     display: flex;
     align-items: center;
 }
+
 .progress{
     background-color: hsl(217, 89%, 51%);
     margin-right: 10px;
     border-radius: 7px;
 }
+
 .upper-nav h4 > a, .lower-nav h4 > a{
     padding-left: 10px;
     text-decoration: none;
     color: hsl(215, 25%, 80%);
 }
+
 .aside nav img{
     width: 30px;
     height: 30px;
     object-fit: cover;
 }
+
 .lower-nav{
     padding-top: 120px;
 }
+
 .right-side{
     padding-top: 10px;
     padding-left: 20px;
@@ -56,12 +72,14 @@ body{
     width: 75%;
     min-height: 100%;
 }
+
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 20px;
 }
+
 .search{
     display: flex;
     align-items: center;
@@ -71,69 +89,85 @@ header{
     gap: 10px;
     padding-left: 10px;
 }
+
 .search img, .notification-bell, .user-profile img{
     width: 50px;
 }
+
 .search input{
-    width: 900px;
+    width: 100%;
     height: 50px;
     background-color: hsl(214, 100%, 97%);
     border: none;
     color: hsl(215, 20%, 65%);border-radius: 7px;
 }
+
 .user-profile{
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .top{
     display: flex;
     align-items: center;
 }
+
 .top img{
     width: 100px;
 }
+
 .top-text h1{
     color: hsl(224, 64%, 22%);
 }
+
 .top-text h5{
     color: hsl(215, 25%, 45%);
 }
+
 .progress-2 > img{
     width: 150px;
 }
+
 .maths img, .bio img, .chem img, .phy img, .eng img{
     width: 50px;
 }
+
 .section{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
+
 .progress-check{
     display: flex;
     align-items: center;
     gap: 30px;
     width: 70%;
 }
+
 .progress-2{
     width: 20%;
 }
+
 .over-progress{
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 70%;
 }
+
 .over-progress h2{
     color: hsl(224, 64%, 22%);
     width: 100%;
 }
+
 .progress-fill1{
     width: 85%;
     background-color: hsl(160, 84%, 39%);
 }
+
 .text{
     background-color: hsl(140, 60%, 96%);
     width: 25%;
@@ -144,26 +178,33 @@ header{
     height: 100px;
     border-radius: 7px;
 }
+
 .top{
     color: hsl(170, 85%, 25%);
 }
+
 .bottom{
     color: hsl(221, 50%, 45%);
 }
+
 .tracks h2, h3, h4{
     color: hsl(224, 64%, 22%);
 }
+
 h4{
     font-weight: 400;
 }
+
 .tracks{
     display: flex;
     flex-direction: column;
 }
+
 .progress-tracks{
     display: grid;
     grid-template-columns: 1fr;
 }
+
 .maths, .bio, .chem, .phy, .eng{
     display: flex;
     align-items: center;
@@ -172,12 +213,14 @@ h4{
     padding: 5px 10px;
     width: 100%;
 }
+
 .maths1, .bio1, .chem1, .phy1, .eng1{
     display: flex;
     gap: 5px;
     align-items: center;
     width: 25%;
 }
+
 .progress-track1, .progress-track2, .progress-track3, .progress-track4, .progress-track5, .progress-track6{
     width: 100%;
     height: 15px;
@@ -185,27 +228,439 @@ h4{
     background-color: hsl(214, 100%, 97%);
     margin-right: 20px;
 }
+
 .progress-fill1, .progress-fill2, .progress-fill3, .progress-fill4, .progress-fill5, .progress-fill6{
     height: 15px;
     border-radius: 100px;
 }
+
 .progress-fill2{
     background-color: hsl(217, 90%, 45%);
     width: 70%;
 }
+
 .progress-fill3{
     background-color: hsl(145, 80%, 35%);
     width: 90%;
 }
+
 .progress-fill4{
     background-color: hsl(354, 85%, 45%);
     width: 60%;
 }
+
 .progress-fill5{
     background-color: hsl(271, 76%, 42%);
     width: 50%;
 }
+
 .progress-fill6{
     background-color: hsl(29, 93%, 42%);
     width: 40%;
+}
+
+
+
+
+.studymate-logo {
+    max-width: 100%;
+}
+
+.upper-nav,
+.lower-nav {
+    padding-right: 10px;
+}
+
+.lower-nav {
+    margin-top: auto;
+    padding-top: 24px;
+}
+
+.right-side {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+}
+
+.search {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+}
+
+.search input {
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+}
+
+.search:focus-within {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.grid-container > div:hover,
+.subjects > div:hover,
+.study-plan:hover,
+.progress2:hover,
+.question-container:hover,
+.bottom-sect:hover,
+.progress-tracks > div:hover {
+    box-shadow: 0 8px 20px rgba(15, 23, 49, 0.12);
+}
+
+button:hover {
+    box-shadow: 0 4px 10px rgba(15, 23, 49, 0.14);
+}
+
+
+
+tbody tr:hover {
+    background-color: hsl(214, 100%, 97%);
+}
+
+@media (max-width: 700px) {
+    .section {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .progress-check,
+    .section > .text {
+        width: 100%;
+    }
+
+    .progress-check {
+        min-width: 0;
+    }
+
+    .progress-tracks > div {
+        gap: 10px;
+    }
+
+    .right-side > header + .top,
+    .right-side > header + .section {
+        margin-top: 0;
+    }
+
+    .top-text h1 {
+        font-size: 18px;
+    }
+
+    .section {
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .progress-check {
+        align-items: center;
+        gap: 12px;
+        padding: 12px;
+        border: 1px solid hsl(214, 30%, 92%);
+        border-radius: 12px;
+        background: white;
+    }
+
+    .section > .text {
+        min-height: 68px;
+        height: auto;
+        padding: 12px;
+    }
+
+    .progress-tracks {
+        gap: 10px;
+        margin-top: 12px;
+    }
+
+    .progress-tracks > div {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 6px 10px;
+        padding: 10px;
+        border: 1px solid hsl(214, 30%, 92%);
+        border-radius: 10px;
+        background: white;
+    }
+
+    .right-side .progress-tracks .maths1,
+    .right-side .progress-tracks .bio1,
+    .right-side .progress-tracks .chem1,
+    .right-side .progress-tracks .phy1,
+    .right-side .progress-tracks .eng1 {
+        grid-column: 1;
+        min-width: 0;
+        width: auto;
+    }
+
+    .right-side .progress-tracks .progress-track2,
+    .right-side .progress-tracks .progress-track3,
+    .right-side .progress-tracks .progress-track4,
+    .right-side .progress-tracks .progress-track5,
+    .right-side .progress-tracks .progress-track6 {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+    }
+
+    .progress-tracks > div > h3 {
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 12px;
+    }
+
+    .progress-2 {
+        flex: 0 0 90px;
+        width: 90px;
+    }
+
+    .progress-2 > img {
+        width: 100%;
+    }
+
+    .tracks > h2 {
+        margin-bottom: 8px;
+    }
+
+    body {
+        min-height: 100vh;
+        background: hsl(210, 40%, 98%);
+    }
+
+    .container {
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .aside {
+        display: contents;
+    }
+
+    .studymate-logo {
+        display: none;
+    }
+
+    .upper-nav {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 0;
+        background: hsl(0, 0%, 100%);
+        box-shadow: 0 -4px 16px rgba(15, 23, 49, 0.08);
+    }
+
+    .upper-nav > div {
+        display: none;
+        min-width: 0;
+        margin: 0;
+        padding: 4px 0;
+        border-radius: 8px;
+        background: transparent;
+        transform: none;
+    }
+
+    .upper-nav > .dashboard,
+    .upper-nav > .subject,
+    .upper-nav > .study-planner,
+    .upper-nav > .resources,
+    .upper-nav > .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aside nav img {
+        flex: none;
+        width: 22px;
+        height: 22px;
+        object-fit: contain;
+    }
+
+    .upper-nav h4 {
+        max-width: 100%;
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .upper-nav h4 > a {
+        display: block;
+        overflow: hidden;
+        max-width: 100%;
+        padding: 4px 1px 0;
+        color: hsl(215, 20%, 55%);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .upper-nav > .dashboard h4 > a,
+    .upper-nav > .subject h4 > a,
+    .upper-nav > .study-planner h4 > a,
+    .upper-nav > .resources h4 > a,
+    .upper-nav > .profile h4 > a {
+        font-size: 0;
+    }
+
+    .upper-nav > .dashboard h4 > a::after,
+    .upper-nav > .subject h4 > a::after,
+    .upper-nav > .study-planner h4 > a::after,
+    .upper-nav > .resources h4 > a::after,
+    .upper-nav > .profile h4 > a::after {
+        font-size: 9px;
+    }
+
+    .upper-nav > .dashboard h4 > a::after {
+        content: "Home";
+    }
+
+    .upper-nav > .subject h4 > a::after {
+        content: "Subjects";
+    }
+
+    .upper-nav > .study-planner h4 > a::after {
+        content: "Planner";
+    }
+
+    .upper-nav > .resources h4 > a::after {
+        content: "Notes";
+    }
+
+    .upper-nav > .profile h4 > a::after {
+        content: "More";
+    }
+
+    .upper-nav a[aria-current="page"] {
+        color: hsl(217, 89%, 51%);
+        font-weight: 700;
+    }
+
+    .lower-nav {
+        display: none;
+    }
+
+    .right-side {
+        width: 100%;
+        padding: 0 16px 100px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-height: 64px;
+        margin: 0 -16px 18px;
+        padding: 12px 16px;
+        background: hsl(218, 58%, 15%);
+    }
+
+    .studymate {
+        display: block;
+        color: hsl(0, 0%, 100%);
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    header::before {
+        flex: none;
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        background: hsl(0, 0%, 100%) url("./Images/StudyMate Education Icon.png") center / contain no-repeat;
+        content: "";
+    }
+
+    header::after {
+        color: hsl(0, 0%, 100%);
+        content: attr(data-mobile-title);
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    header .search,
+    header > .notification-bell,
+    header > .user-profile {
+        display: none;
+    }
+
+    .top {
+        display: none;
+    }
+
+    button:hover,
+    .grid-container > div:hover,
+    .subjects > div:hover,
+    .study-plan:hover,
+    .progress2:hover,
+    .question-container:hover,
+    .bottom-sect:hover,
+    .progress-tracks > div:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .right-side > header > .user-profile,
+    .right-side > header > .notification-bell {
+        display: none;
+    }
+
+}
+
+@keyframes page-enter {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: page-enter 420ms ease-out both;
+}
+
+a,
+button {
+    transition: color 180ms ease, background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+a:hover,
+button:hover {
+    transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .upper-nav > div:hover,
+    .lower-nav > div:hover {
+        transform: none;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+    }
+
 }

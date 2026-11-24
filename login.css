@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.image {
+    width: 50%;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+.mobile-image {
+    display: none;
+}
+
+.image > .mobile-image {
+    display: none;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 48px;
+}
+
+.text h1 {
+    color: hsl(220, 70%, 20%);
+    padding-bottom: 10px;
+}
+
+.text h5 {
+    color: hsl(210, 35%, 50%);
+    padding-bottom: 10px;
+}
+
+input {
+    border: 0;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.password, .username {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid hsl(210, 70%, 92%);
+    width: min(100%, 360px);
+    padding: 0 0 0 12px;
+    border-radius: 7px;
+}
+
+.password img, .username img {
+    width: 20px;
+}
+
+.password input, .username input {
+    width: 100%;
+    height: 36px;
+    padding: 0 4px;
+    outline: none;
+}
+
+button {
+    min-height: 44px;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.log-in {
+    width: min(100%, 360px);
+    padding-top: 24px;
+}
+
+.log-in button {
+    background-color: hsl(217, 100%, 50%);
+    border: none;
+}
+
+.log-in > .login-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    border-radius: 7px;
+    background-color: hsl(217, 100%, 50%);
+    color: white;
+    text-decoration: none;
+}
+
+.forgot-password > a{
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: hsl(217, 100%, 50%);
+}
+
+.create {
+    width: min(100%, 360px);
+}
+
+h6 {
+    text-align: center;
+}
+
+.create-account-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    width: 100%;
+    border: none;
+    background-color: hsl(215, 100%, 94%);
+    color: hsl(221, 79%, 48%);
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid hsl(214, 32%, 91%);
+}
+
+.divider span {
+    padding: 0 10px;
+    color: hsl(215, 16%, 47%);
+    font-size: 14px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.password:focus-within, .username:focus-within {
+    border-color: hsl(217, 89%, 51%);
+}
+
+button:hover {
+    box-shadow: 0 4px 10px rgba(15, 23, 49, 0.14);
+}
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+
+    .image {
+        height: 140px;
+        min-height: 0;
+        width: 100%;
+    }
+
+    .image > .logo {
+        display: none;
+    }
+
+    .image > .mobile-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .text {
+        align-items: center;
+        width: 100%;
+        padding: 24px;
+        background-color: white;
+    }
+
+    .text h1, .text h5 {
+        text-align: center;
+    }
+
+}
+
+@keyframes page-enter {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: page-enter 420ms ease-out both;
+}
+
+a,
+button {
+    transition: color 180ms ease, background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+a:hover,
+button:hover {
+    transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}

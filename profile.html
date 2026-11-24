@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./Images/StudyMate Education Icon.png">
     <link rel="stylesheet" href="./profile.css">
-    <link rel="stylesheet" href="./motion.css">
-    <title>StudyMate</title>
+    <title>StudyMate | Profile</title>
 </head>
 <body>
     <div class="container">
@@ -45,23 +44,26 @@
             <nav class="lower-nav">
                 <div class="settings">
                     <img src="./Images/Minimalist White Gear App Icon Transparent Rounded No Background.png" alt="A Settings Icon">
-                    <h4><a href="">Settings</a></h4>
+                    <h4><a href="#settings">Settings</a></h4>
                 </div>
                 <div class="logout">
                     <img src="./Images/Modern Navy Logout Icon Transparent Rounded No Background.png" alt="A Logout Icon">
-                    <h4><a href="">Log Out</a></h4>
+                    <h4><a href="./login.html">Log Out</a></h4>
                 </div>
             </nav>
         </div>
-        <div class="right-side">
+        <main class="right-side">
             <header>
-                <div class="search">
+                <form class="search" action="./search.html" method="get" role="search">
                     <img src="./Images/image_9cc13f8a.jpg" alt="A Search Icon">
-                    <input  placeholder="Search anything...">
-                </div>
+                    <input type="search" name="q" aria-label="Search StudyMate" placeholder="Search anything...">
+                </form>
                 <img src="./Images/Minimal Navy Notification Bell Icon Transparent Rounded.png" alt="A Notification Bell Icon" class="notification-bell">
                 <div class="user-profile">
                     <img src="./Images/Minimalist Flat Avatar Icon Transparent Rounded.png" alt="An Avatar Icon">
+                </div>
+                <div class="studymate">
+                    <h1>StudyMate</h1>
                 </div>
             </header>
             <div class="top">
@@ -74,7 +76,7 @@
             <div class="avatar-profile">
                 <div class="avatar-img">
                     <img src="./Images/Minimalist Flat Avatar Icon Transparent Rounded.png" alt="An Avatar Icon">
-                    <button>Change Photo</button>
+                    <a class="profile-action" href="./edit-profile.html#photo">Change Photo</a>
                 </div>
                 <div class="avatar-text">
                     <div>
@@ -82,7 +84,7 @@
                         <h5>Class: SS3</h5>
                         <h5>Study Goal: 90%+ in all subjects</h5>
                     </div>
-                    <button><b>Edit Profile</b></button>
+                    <a class="profile-action secondary" href="./edit-profile.html"><b>Edit Profile</b></a>
                 </div>
             </div>
             <div class="subject-sect">
@@ -90,50 +92,50 @@
                 <div class="grid-container">
                     <div class="maths">
                         <img src="./Images/Glossy Blue Calculator App Icon Transparent Rounded.png" alt="A Calculator Icon">
-                        <h4>Mathematics</h4>
+                        <h4><a href="./subject-details.html#mathematics">Mathematics</a></h4>
                     </div>
                     <div class="bio">
                         <img src="./Images/Minimal Mint Sprout App Icon Transparent Rounded.png" alt="A Leaf Sprouting">
-                        <h4>Biology</h4>
+                        <h4><a href="./subject2.html">Biology</a></h4>
                     </div>
                     <div class="chem">
                         <img src="./Images/Pastel Pink Chemistry Flask Icon Transparent Rounded.png" alt="A Conical Flask">
-                        <h4>Chemistry</h4>
+                        <h4><a href="./subject-details.html#chemistry">Chemistry</a></h4>
                     </div>
                     <div class="phy">
                         <img src="./Images/Pastel Purple Atom App Icon Transparent Rounded.png" alt="An Atom Icon">
-                        <h4>Physics</h4>
+                        <h4><a href="./subject-details.html#physics">Physics</a></h4>
                     </div>
                     <div class="eng">
                         <img src="./Images/Glossy Orange Book App Icon Transparent Rounded.png" alt="A Book Icon">
-                        <h4>English</h4>
+                        <h4><a href="./subject-details.html#english">English</a></h4>
                     </div>
                 </div>
             </div>
-            <div class="Settings">
-                <div class="Account">
+            <div class="Settings" id="settings">
+                <a class="Account" href="./settings.html#account">
                     <div class="account">
                         <img src="./Images/Blue User Settings Icon.png" alt="An Account Settings Icon">
                         <h4>Account Settings</h4>
                     </div>
                     <span>></span>
-                </div>
-                <div class="Notification">
+                </a>
+                <a class="Notification" href="./settings.html#notifications">
                     <div class="notification">
                         <img src="./Images/Minimal Navy Notification Bell Icon Transparent Rounded.png" alt="A Notification Bell Icon">
                         <h4>Notification Settings</h4>
                     </div>
                     <span>></span>
-                </div>
-                <div class="Help">
+                </a>
+                <a class="Help" href="./settings.html#help">
                     <div class="help">
                         <img src="./Images/Blue Headset Support Icon.png" alt="A Support Icon">
                         <h4>Help & Support</h4>
                     </div>
                     <span>></span>
-                </div>
+                </a>
             </div>
-        </div>
+        </main>
     </div>
 </body>
 </html>

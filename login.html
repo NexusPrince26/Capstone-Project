@@ -4,39 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="40x40" href="./Images/StudyMate Education Icon.png">
-    <link rel="stylesheet" href="./homepage.css">
-    <link rel="stylesheet" href="./motion.css">
-    <title>StudyMate</title>
+    <link rel="stylesheet" href="./login.css">
+    <title>StudyMate | Log In</title>
 </head>
 <body>
     <div class="container">
         <div class="image">
-            <img src="./Images/StudyMate_ Learn, Improve, Achieve.png" alt="StudyMate Logo">
+            <img src="./Images/StudyMate_ Learn, Improve, Achieve.png" alt="StudyMate Logo" class="logo">
+            <img src="./Images/StudyMate Education Hero Banner.png" alt="StudyMate Education Hero Banner" class="mobile-image">
         </div>
-        <div class="text">
+        <main class="text">
             <h1>Welcome Back!</h1>
             <h5>Log in to continue your learning journey</h5>
             <div class="inputs">
                 <div class="username">
                     <img src="./Images/person_48dp_173660_FILL0_wght400_GRAD0_opsz48.png" alt="A User-Icon">
-                    <input placeholder="Email or Username">
+                    <input type="email" placeholder="Email or Username">
                 </div>
                 <div class="password">
                     <img src="./Images/lock_48dp_173660_FILL0_wght400_GRAD0_opsz48.png" alt="A Lock Icon">
-                    <input placeholder="Password">
+                    <input type="password" placeholder="Password">
                 </div>
             </div>
             <div class="log-in">
-                <button><a href="./dashboard.html" target="_self">Log In</a></button>
-                <a href="#" class="forgot-password">Forgot password?</a>
+                <a class="login-button" href="./dashboard.html">Log In</a>
+                <span class="forgot-password"><a href="./forgot-password.html">Forgot password?</a></span>
             </div>
             <div class="create">
                 <div class="divider">
                     <span>or</span>
                 </div>
-                <button>Create an Account</button>
+                <a class="create-account-button" href="./create-account.html">Create an Account</a>
             </div>
-        </div>
+        </main>
     </div>
 </body>
 </html>
